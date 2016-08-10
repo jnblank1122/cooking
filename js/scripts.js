@@ -21,6 +21,7 @@ $(document).ready(function(){
     event.preventDefault();
     var ounceInput = parseInt($("input#ozC").val());
     var cupOutput = ounceInput / 8;
+    $("#cOZ").val(cupOutput);
     $("#ozC1").text(cupOutput);
     console.log(cupOutput);
   });
